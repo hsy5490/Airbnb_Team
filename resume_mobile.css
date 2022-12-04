@@ -1,0 +1,91 @@
+@charset "utf-8";
+body{
+    font-family: 'dongle',sans-serif;
+    background-image: url('../images/WRAP.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    
+}
+#wrap{
+        width: 100%;
+        border: 1px solid black;
+        margin: 0 auto;
+        font-size: 0.5rem;
+        background-image: url('../images/bear.tiger.png');
+        background-repeat: no-repeat;
+        background-size: 60% 50%;
+        background-position: 120% 45%;      
+}
+header{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    font-weight: 700;
+}
+
+header h1{
+    padding-left: 20px;
+    padding-top:20px;
+    font-size: 36px;
+    font-weight: 700;
+}
+header h2{
+    padding-right: 20px;
+    padding-top:20px;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+section{
+    display: flex;
+    flex-flow: row nowrap;
+    position: relative;   
+}
+section h2 img{
+    margin-top: 400px;
+    position:absolute;
+    right: 0;
+    top: 0;
+}
+article{
+    display: flex;
+    flex-flow: column nowrap;
+    margin-top: 50px;
+    margin-left: 20px;
+}
+article h2{
+    margin-top: 20px;
+}
+article h2{
+    font-size: 16px;
+    font-weight: 500; 
+}
+.homepage h3{
+    font-size: 24px;
+    font-weight: 500;
+    margin-top: 48px;
+}
+.homepage p{
+    font-size: 14px;
+    margin-top: 24px;
+    font-weight: 500;
+}
+.contact p{
+    margin-top: 24px;
+}
+.sns{
+    display: flex;
+    flex-flow: row nowrap;
+    padding-top: 24px;
+}
+.sns p{
+   padding-right: 20px;
+}
+.skills{
+    margin-bottom: 50px;
+}
+footer {
+    font-size: 14px;
+    color: #494949;
+    text-align: center;
+}

@@ -1,0 +1,102 @@
+@charset "utf-8";
+body{
+    font-family: 'noto sans kr',sans-serif;
+    
+}
+#wrap{
+    width:100%;
+}
+.w920{
+    width:920px;
+    margin: 0 auto;
+    
+}
+header .snb{
+    background-color: #666;
+
+}
+header .snb ul{
+    color:silver;
+    font-size: 12px;
+    line-height: 24px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+}
+header .snb ul li{
+    margin-left: 12px;
+    cursor: pointer;
+}
+header .snb ul li:hover{
+    color: #fff;
+}
+header .gnb {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+}
+header .gnb h1{
+    padding-right: 540px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+h1:hover{
+    color: #fff;
+}
+header .gnb ul{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+header .gnb ul li{
+    font-size: 14px;
+    font-weight: 500;
+    padding-left: 20px;
+    cursor: pointer;
+}
+header .gnb ul li:hover{
+    color: #535353;
+}
+.slide{
+    height:500px;
+    background-color:greenyellow;
+    cursor: pointer;
+}
+section{
+    margin-bottom: 17px;
+    margin: 0 auto;
+}
+#box1{
+    display: flex;
+    flex-flow: row nowrap;
+}
+#box2{
+    display: flex;
+    flex-flow: nowrap;
+}
+.box1,.box2,.box4,.box5{
+    width:295px;
+    height: 165px;
+    background-color: aqua;
+    margin-right: 17px;
+    margin-top: 17px;
+    cursor: pointer;
+}
+.box3,.box6{
+    width:295px;
+    height: 165px;
+    background-color: aqua;
+    margin-top: 17px;
+    cursor: pointer;
+}
+footer{
+    font-size: 12px;
+    border-top:1px solid #222;
+    margin-top: 17px;
+}
+footer p{
+    margin-left: 490px;
+}

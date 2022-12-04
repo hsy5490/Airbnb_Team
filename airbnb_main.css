@@ -1,0 +1,367 @@
+@charset "utf-8";
+.w318 {
+    width: 84.8%;
+    margin: 0 auto;
+}
+body, html {
+    font-family: 'Noto Sans KR', sans-serif;
+    color: #202020;
+    background: #fff;
+    font-size: 14px;
+    margin: 0 auto;
+    width: 100%;
+}
+#wrap {
+    border: none;
+}
+
+/* 이미지 통합 css */
+img {
+    border: none;
+    border-radius: 10px;
+}
+/* 헤더 플롯 */
+header {
+    padding: 14px;
+}
+header h2 {
+    float: left;
+    margin-right: 28px;
+}
+header form {
+    float: left;
+}
+header label {
+    margin-top: 5px;
+    float: right;
+}
+
+/* 검색창 */
+.search {
+    vertical-align: auto;
+    /* 위치기준값 */ 
+    position:relative;
+    left: -10;
+    top: 20px;
+    z-index: 1;
+}
+.search .icon {
+    /* 포지션 */
+    color: #6d6d6d;
+    position: absolute;
+    z-index: 3;
+    margin-top: 4.5px;
+    padding-left: 140px;
+}
+
+/* Inout Form */
+.search span+input {
+    margin-top: 0.5px;
+    width: 180px;
+    height: 24px;
+    background: #eee;
+    outline: none;
+    border: none;
+    border-radius: 11px;
+    padding-right: 14px;
+    padding-left: 20px;
+    font-size: 11px;
+    /* 포지션 */
+    position: absolute;
+    /* top: 17.5px;
+    left: 36%; */
+    z-index: 2;
+}
+
+/* A. 햄버거 메뉴 */
+input[id="menuicon"] {
+    display: none;
+}
+input[id="menuicon"]+label {
+    display: block;
+    margin-left: 24px;
+    width: 20px;
+    height: 16px;
+    cursor: pointer;
+    /* 위치기준값 */
+    position: relative;
+    top: 18px;
+    z-index: 100;
+    float: right;
+}
+input[id="menuicon"]+label span {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #393939;
+    /* 포지션 */
+    position: absolute;
+    z-index: 100;
+}
+
+input[id="menuicon"]+label span:nth-child(1) {
+    top: 0;
+}
+input[id="menuicon"]+label span:nth-child(2) {
+    top: 50%;
+    transform: translateY(-50%);
+    /* top: 0; */
+}
+input[id="menuicon"]+label span:nth-child(3) {
+    bottom: 0;
+}
+
+/* B. 클릭시 X버튼 */
+input[id="menuicon"]:checked +label span:nth-child(1) {
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+}
+input[id="menuicon"]:checked +label span:nth-child(2) {
+    opacity: 0;
+}
+input[id="menuicon"]:checked +label span:nth-child(3) {
+    bottom: 50%;
+    transform: translateY(50%) rotate(-45deg);
+}
+
+/* GNB메뉴 */
+.gnb ul {
+    /* 플렉스 */
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    text-align: center;
+    padding: 0 20px 20px 0;
+}
+.gnb img {
+    width: 30px;
+}
+.gnb ul:last-child {
+    padding-right: 0;
+}
+/* 호버 */
+.hover span {
+    display: block;
+    width: 19%;
+    height: 2px;
+    background-color: #ff696d;
+    /* 포지션 */
+    position: absolute;
+    z-index: 100;
+}
+.hover span:last-child {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #e9e9e9;
+    /* 포지션 */
+    position: absolute;
+    z-index: 90;
+}
+
+/* 메인 */
+#contents {
+    padding: 20px 20px;
+}
+.slider img {
+    width: 100%;
+    height: 310px;
+    position: relative;
+}
+.mainSlider .like {
+    color: #fff;
+    /* 포지션 */
+    position: absolute;
+    font-size: 12px;
+    left: 280px;
+    top: 460px;
+    z-index: 1;
+}
+.like img {
+    width: 20px;
+}
+h2 {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 700;
+}
+h6 {
+    margin-top: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #ff696d;
+}
+h3 {
+    margin-top: 20px;
+    font-size: 15px;
+    font-weight: 600;
+}
+h4 {
+    margin-top: 10px;
+    font-size: 12px;
+}
+.details {
+    position: relative;
+}
+.showMore h6 {
+    font-size: 12px;
+    font-weight: 600;
+    /* 포지션 */
+    position: absolute;
+    bottom: 4px;
+    right: 0;
+    z-index: 1;
+    color: #ff696d;
+}
+.title {
+    margin: 56px 0 28px 0;
+    /* 포지션 */
+    position: relative;
+}
+.price {
+    font-size: 15px;
+    font-weight: 600;
+    /* 포지션 */
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    color: #ff696d;
+}
+.price span {
+    font-size: 12px;
+    color: #383838;
+}
+.price2 {
+    color:#202020;
+    font-weight: 400;
+    font-size: smaller;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    text-decoration: line-through;
+}
+
+/* 2. Event */
+.event {
+    width: 100%;
+}
+.event_photos img {
+    width: 62%;
+    float: left;
+    margin-right: 1%;
+}
+.event_photos li img {
+    width: 32%;
+    margin-bottom: 3.5%;
+    float: right;
+}
+
+/* 3. Promotion */
+.promo_box {
+    position: relative;
+    margin-bottom: 22px;
+}
+.promo_box img {
+    width: 100%;
+}
+.promo_text {
+    position: absolute;
+    left: 54%;
+    top: 0;
+    z-index: 1;
+}
+.promo_text h2 {
+    font-size: 16px;
+}
+.promo_text h3 {
+    font-size: 14px;
+    font-weight: normal;
+}
+.promo_text h4 {
+    line-height: 1.5;
+}
+.profile {
+    width: 100px;
+    float: left;
+}
+/* 뉴스 */
+.news {
+    margin-bottom: 60px;
+}
+.news_content {
+    width: 50%;
+    height: 200px;
+    padding-right: 10px;
+    /* 플롯 */
+    float: left;
+}
+.news_content h4 {
+    height: 160px;
+}
+.news_content img {
+    width: 100%;
+    height: 100%;
+}
+.news_content:last-child {
+    padding-right: 0;
+}
+.news_content p {
+    margin-top: 10px;
+    font-size: 13px;
+    font-weight: 700;
+    color: #383838;
+}
+.tabBar {
+    border-top: 1px solid #e7e7e7;
+    border-bottom: 1px solid #e7e7e7;
+    text-align: center;
+    height: 70px;
+    line-height: 1.5;
+    padding-top: 10px;
+}
+.profile {
+    width: 33.33%;
+    float: left;
+}
+.wishList {
+    width: 33.33%;
+    float: left;
+}
+.hostReg {
+    width: 33.33%;
+    float: left;
+}
+footer {
+    background-color: #ffb8ba;
+    font-size: 12px;
+}
+.footer_menu {
+    padding: 22px 30px 0 30px;
+    line-height: 1rem;
+}
+.footer_menu h2 {
+    font-weight: 700;
+}
+.footer_menu ul {
+    margin-bottom: 30px;
+}
+
+.footer_left {
+    float: left;
+}
+.footer_right {
+    float: right;
+}
+footer .copyright {
+    color: #4d4c4c;
+    text-align: center;
+    font-size: 8px;
+    padding: 6px 0 24px 0;
+    letter-spacing: -0.05em;
+    line-height: 0.875rem;
+}
+footer ul {
+    /* display: none; */
+}
